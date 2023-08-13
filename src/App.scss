@@ -1,0 +1,61 @@
+```scss
+// Define color variables
+$primary-color: #2a2a72;
+$secondary-color: #009ffd;
+$accent-color: #ff2079;
+$light-color: #fff;
+$dark-color: #000;
+
+// Define font variables
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Montserrat', sans-serif;
+
+// Define breakpoint variables
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+body {
+  font-family: $font-primary;
+  color: $dark-color;
+  background-color: $light-color;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-secondary;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// Mobile-first responsive design
+@media screen and (min-width: $breakpoint-mobile) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+  .container {
+    padding: 0 60px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  .container {
+    padding: 0 90px;
+  }
+}
+
+// Dark mode styles
+body.dark-mode {
+  color: $light-color;
+  background-color: $dark-color;
+}
+```
