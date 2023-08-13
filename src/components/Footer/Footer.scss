@@ -1,0 +1,39 @@
+```scss
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #2a2a2a;
+  color: #fff;
+  font-size: 14px;
+
+  .footer-links {
+    display: flex;
+    gap: 10px;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #9c27b0;
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+
+    .footer-links {
+      margin-bottom: 10px;
+    }
+  }
+}
+```
